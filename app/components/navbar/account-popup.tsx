@@ -16,7 +16,7 @@ export default function AccountPopup({
   setPageLoader,
 }: propsType) {
   return (
-    <div className="lg:px-8 lg:py-8 fixed top-[50px] gap-3 flex flex-col items-start right-[45px] bg-black opacity-[.85] z-[999]">
+    <div className="    lg:px-8 lg:py-8 fixed top-[50px] gap-3 flex flex-col items-start right-[45px] bg-black opacity-[.85] z-[999]">
       <div className="flex flex-col gap-3">
         {accounts && accounts.length
           ? accounts

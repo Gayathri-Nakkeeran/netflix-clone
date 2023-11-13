@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { AiFillPlayCircle } from "react-icons/ai";
-import { IoMdInformationCircleOutline } from "react-icons/io";
+import { AiFillPlayCircle } from "react-icons/ai/index";
+import { IoMdInformationCircleOutline } from "react-icons/io/index";
 
 const baseUrl = "https://image.tmdb.org/t/p/original";
 
@@ -16,7 +16,7 @@ export default function Banner({ medias }: any) {
   const router = useRouter();
 
   return (
-    <div className="flex flex-col space-y-2 py-16 md:space-y-4 h-[45vh] lg:h-[65vh] lg:justify-end lg:pb-12 lg:pl-24">
+    <div className="flex flex-col space-y-2 py-16 md:space-y-4 h-[4/5vh] lg:h-[65vh] lg:justify-end lg:pb-12 lg:pl-24">
       <div className="absolute top-0 left-0  w-screen -z-10">
         <Image
           src={`${baseUrl}${

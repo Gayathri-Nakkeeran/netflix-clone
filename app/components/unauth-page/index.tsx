@@ -1,18 +1,14 @@
 "use client";
-
-// Plus Icon Motion div React player
-
 import { signIn } from "next-auth/react";
-import { motion } from "framer-motion";
+
 import { PlusIcon } from "@heroicons/react/24/outline";
 import { useRouter } from "next/navigation";
 // import {ChevronDownIcon} from "@heroicons/react/24/outline";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import { SetStateAction, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Footer from "../footer";
 import logo from "../../../public/Netflix_2015_logo.svg";
-import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 
 const questions = [
   {

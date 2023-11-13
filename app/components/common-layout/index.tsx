@@ -1,11 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Head from "next/head";
 import Navbar from "../navbar";
 import Banner from "../banner";
 import MediaRow from "../media-row";
-import Footer from "../footer";
 
 export default function CommonLayout({ mediaData }: any) {
   return (
@@ -33,7 +31,6 @@ export default function CommonLayout({ mediaData }: any) {
               : null}
           </section>
         </div>
-       
       </>
     </div>
   );
