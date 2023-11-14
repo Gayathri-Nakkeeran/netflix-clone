@@ -3,7 +3,7 @@ import Account from "../../../models/Account";
 import { NextResponse } from "next/server";
 export const dynamic = "force-dynamic";
 
-export async function DELETE(req:{url:URL}) {
+export async function DELETE(req:any) {
     try {
         await connectToDB();
         const { searchParams } = new URL(req.url)

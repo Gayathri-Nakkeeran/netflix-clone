@@ -3,7 +3,7 @@ import Account from "../../../models/Account";
 import { compare } from "bcryptjs";
 import { NextResponse } from "next/server";
 export const dynamic = "force-dynamic";
-export async function POST(req:string) {
+export async function POST(req:any) {
     try {
         await connectToDB();
         const { pin, accountId, uid } = await JSON.parse(req);

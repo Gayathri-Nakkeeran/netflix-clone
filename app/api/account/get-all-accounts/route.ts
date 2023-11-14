@@ -2,7 +2,7 @@ import connectToDB from "../../../database";
 import Account from '../../../models/Account'
 import { NextResponse } from "next/server";
 export const dynamic = "force-dynamic";
-export async function GET(req:{url:URL}) {
+export async function GET(req:any) {
     try {
         await connectToDB();
         const { searchParams } = new URL(req.url);
