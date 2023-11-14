@@ -7,7 +7,7 @@ type reqType = {
     json():{name:string , pin:number , uid:number} ;
    
 }
-export async function POST(req:string) {
+export async function POST(req:any) {
 
     try {
         await connectToDB();
