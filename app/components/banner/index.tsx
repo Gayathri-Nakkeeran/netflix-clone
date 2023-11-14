@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { AiFillPlayCircle } from "react-icons/ai/index";
-import { IoMdInformationCircleOutline } from "react-icons/io/index";
+import { AiFillPlayCircle } from "../../../node_modules/react-icons/ai";
+import { IoMdInformationCircleOutline } from "../../../node_modules/react-icons/io";
 
 const baseUrl = "https://image.tmdb.org/t/p/original";
 
