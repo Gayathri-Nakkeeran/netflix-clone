@@ -82,10 +82,7 @@ export const getTVorMovieVideosByID = async (type: string, id: string) => {
   }
 };
 
-export const getTVorMovieSearchResults = async (
-  type: string,
-  query: string
-) => {
+export const getTVorMovieSearchResults = async (type: string, query: any) => {
   try {
     const res = await fetch(
       `${BASE_URL}/search/${type}?api_key=${API_KEY}&include_adult=false&language=en-US&query=${query}`,
@@ -135,19 +132,19 @@ export const getSimilarTVorMovies = async (type: string, id: number) => {
   }
 };
 
-export const getAllfavorites = async (uid:string, accountID:string) => {
-    try {
-        const res = await fetch(
-            `/api/favorites/get-all-favorites?id=${uid}&accountID=${accountID}`,
-            {
-                method: "GET",
-            }
-        );
+export const getAllfavorites = async (uid: string, accountID: string) => {
+  try {
+    const res = await fetch(
+      `/api/favorites/get-all-favorites?id=${uid}&accountID=${accountID}`,
+      {
+        method: "GET",
+      }
+    );
 
-        const data = await res.json();
+    const data = await res.json();
 
-        return data && data.data;
-    } catch (e) {
-        console.log(e);
-    }
+    return data && data.data;
+  } catch (e) {
+    console.log(e);
+  }
 };

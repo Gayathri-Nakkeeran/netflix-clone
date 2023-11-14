@@ -30,7 +30,7 @@ export default function ManageAccounts() {
 
   const [pin, setPin] = useState("");
   const [pinError, setPinError] = useState(false);
-  const [showPinContainer, setShowPinContainer] = useState < { show: boolean, account: {} } > ({
+  const [showPinContainer, setShowPinContainer] = useState({
     show: false,
     account: null,
   });
@@ -98,8 +98,9 @@ export default function ManageAccounts() {
 
   async function handlePinSubmit(value, index) {
     setPageLoader(true);
+    let res;
     if (showPinContainer.account) {
-      const res = await fetch("/api/account/login-to-account", {
+      res = await fetch("/api/account/login-to-account", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
